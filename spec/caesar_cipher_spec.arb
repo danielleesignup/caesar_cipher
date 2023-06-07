@@ -1,0 +1,28 @@
+require_relative '../lib/caesar_cipher'
+
+describe 'caesar_cipher' do
+    describe '#caesar_cipher' do
+        it 'returns the caesar cipher code' do
+            expect(caesar_cipher("What a string!", 5)).to eql("Bmfy f xywnsl!")
+        end 
+
+        it 'returns the caesar cipher code' do
+            expect(caesar_cipher("God, please tell me the answer", 7)).to eql("Nvk, wslhzl alss tl aol huzdly")
+        end
+
+        it 'returns the caesar cipher code' do
+            expect(caesar_cipher("life is suffering indeed.", 4)).to eql("pmji mw wyjjivmrk mrhiih.")
+        end
+
+        it 'returns the caesar cipher code' do
+            expect(caesar_cipher("I really gotta work-out today", 6)).to eql("O xkgrre muzzg cuxq-uaz zujge")
+        end
+
+        it 'returns the caesar cipher code' do
+            expect(caesar_cipher("yippiedo!", 6)).to eql("eovvokju!")
+        end
+    end
+end
+
+#move to <develop> branch
+#open up the original caesar cipher code to build tests.    
